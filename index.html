@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Information</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #007991, #78ffd6);
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+            width: 400px;
+            animation: slideIn 1s ease-out;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+            font-size: 24px;
+            animation: glow 1.5s ease-in-out infinite alternate;
+        }
+
+        .info {
+            margin: 15px 0;
+            padding: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            color: #fff;
+            font-size: 18px;
+            animation: fadeInText 1s ease-in-out forwards;
+        }
+
+        .info span {
+            font-weight: bold;
+            color: #e0f7fa;
+            animation: slideInText 1.5s ease-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+            transition: 0.5s ease;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .button {
+            text-align: center;
+            padding: 10px 20px;
+            color: #fff;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .help-button {
+            background: linear-gradient(135deg, #2196f3, #ffeb3b);
+        }
+
+        .help-button:hover {
+            background: linear-gradient(135deg, #1769aa, #ffcc00);
+        }
+
+        .ip-button {
+            background: #ff9800;
+        }
+
+        .ip-button:hover {
+            background: #e68900;
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInText {
+            0% {
+                transform: translateX(-20px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #bbb, 0 0 20px #bbb;
+            }
+            to {
+                text-shadow: 0 0 20px #fff, 0 0 30px #fff;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 90%;
+                padding: 15px 20px;
+            }
+
+            .container h2 {
+                font-size: 20px;
+            }
+
+            .info {
+                font-size: 16px;
+            }
+
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Profile Information</h2>
+        <div class="info">
+            <span>Agent Name:</span> Md Muhibbullah
+        </div>
+        <div class="info">
+            <span>Mobile:</span> +8801602384840
+        </div>
+        <div class="info">
+            <span>Division:</span> Dhaka
+        </div>
+        <div class="info">
+            <span>District:</span> Madaripur
+        </div>
+        <div class="info">
+            <span>Thana:</span> Kalkini
+        </div>
+        <div class="info">
+            <span>Street Address:</span> Fasiyatola, Kalkini, Madaripur (ফাসিয়াতলা, কালকিনি, মাদারীপুর)
+        </div>
+        <div class="info">
+            <span>Shop Name:</span> N/A
+        </div>
+        <div class="info">
+            <span>Postal Code:</span> 7900, Bangladesh
+        </div>
+    </div>
+    </div>
+</body>
+</html>
